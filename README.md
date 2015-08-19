@@ -32,11 +32,6 @@ Since this plugin is written in Haskell, you have to download it:
 
     sudo apt-get install ghc cabal-install
 
-The code also depends on the [Shelly] Haskell library:
-
-    cabal update
-    cabal install shelly
-
 ### Clone and source
 
 This plugin assumes that you put it in `~/.zsh/antigen-hs/`:
@@ -61,6 +56,7 @@ module MyAntigen where
 import Antigen (
                 -- Rudimentary imports
                 AntigenConfig (..)
+              , defaultConfig
               , bundle
               , antigen
                 -- If you want to source a bit trickier plugins
